@@ -1,0 +1,26 @@
+@media screen {
+   @font-face {
+      font-family: 'Nespresso Lucas', Helvetica, Arial, sans-serif;
+      src:  local("http://www.nespresso.com/emailing/NespressoVisuals/common/fonts/Regular/NespressoLucas-Regular.woff2") format("woff2"), 
+            local("http://www.nespresso.com/emailing/NespressoVisuals/common/fonts/Regular/NespressoLucas-Regular.woff") format("woff"), 
+            local("http://www.nespresso.com/emailing/NespressoVisuals/common/fonts/Regular/NespressoLucas-Regular.ttf") format("opentype");
+      font-weight: normal;
+      font-style: normal;
+   }
+   @font-face {
+      font-family: 'Nespresso Lucas Light', Helvetica, Arial, sans-serif;
+      src:  local("http://www.nespresso.com/emailing/NespressoVisuals/common/fonts/Light/NespressoLucas-Light.woff2") format("woff2"), 
+            local("http://www.nespresso.com/emailing/NespressoVisuals/common/fonts/Light/NespressoLucas-Light.woff") format("woff"), 
+            local("http://www.nespresso.com/emailing/NespressoVisuals/common/fonts/Light/NespressoLucas-Light.ttf") format("opentype"); 
+      font-weight: normal;
+      font-style: normal;
+   }
+   @font-face {
+      font-family: 'Nespresso Lucas XtraBd', Helvetica, Arial, sans-serif;
+      src:  local("http://www.nespresso.com/emailing/NespressoVisuals/common/fonts/XtraBd/NespressoLucas-XtraBd.woff2") format("woff2"), 
+            local("http://www.nespresso.com/emailing/NespressoVisuals/common/fonts/XtraBd/NespressoLucas-XtraBd.woff") format("woff")?
+            local("http://www.nespresso.com/emailing/NespressoVisuals/common/fonts/XtraBd/NespressoLucas-XtraBd.ttf") format("opentype");
+      font-weight: normal;
+      font-style: normal;
+   }
+}

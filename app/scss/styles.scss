@@ -1,0 +1,58 @@
+@import "font.scss";
+@import "reset.scss";
+@import "specificSelector.scss";
+@import "mediaQueries.scss";
+
+@import "settings.scss"; // all defaults elements are here
+
+
+// Styles pour le inliner ||
+// ---------
+
+.background {
+	background:$rouge;
+}
+
+
+// Global design
+
+.noPadding {
+	padding:$unit*0!important;
+}
+.noMargin {
+	margin:$unit*0!important;
+}
+.wFull {
+	width:100%;
+}
+.gutter {
+	width:$unit*1.5;
+}
+
+
+.btn-style {
+	color: $black;
+	background: $button-background;
+	border: $button-border;
+	padding: $button-padding;
+}
+
+
+// fix android
+
+.fixAndroid {
+	display:	none;  
+	width:		$unit*80 !important; 
+	min-width:	$unit*60 !important; 
+	max-width:	$unit*80 !important;
+}
+
+
+// background image texte ||
+// ---------
+
+.background-image-texte {
+	background-image:url("https://www.zantetsuken.fr/image_texte_magique.php");
+	background-size: cover; 
+	background-position: center;
+}

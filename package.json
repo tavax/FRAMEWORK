@@ -1,0 +1,16 @@
+{
+  "name": "final_framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Laurent Blondel",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-html-extend": "^1.1.6",
+    "gulp-sass": "^4.0.1"
+  }
+}

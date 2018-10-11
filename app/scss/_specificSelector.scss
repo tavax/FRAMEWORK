@@ -1,0 +1,13 @@
+div[style*="margin: 16px 0"] {
+   margin: 0!important;
+}
+/* selecteurs specifiques à APPLE */
+a[x-apple-data-detectors] {
+   color: inherit!important;
+   text-decoration: none!important;
+   font-size: inherit!important;
+   font-family: inherit!important;
+   font-weight: inherit!important;
+   line-height: inherit!important;
+}
+/* selecteurs specifiques à ANDROID/GOOGLE */
