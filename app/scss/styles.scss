@@ -10,9 +10,26 @@
 // ---------
 
 .background {
-	background:$rouge;
+	background:	$rouge;
 }
 
+
+.title-block-custom {
+	font-family:		$global-font-family-bold!important;
+	font-size:			$title-font-size!important;
+	line-height:		$unit*3.4!important;
+	color:				$title-color!important;
+	padding:			0 0 $unit*1.8 0!important;
+	text-decoration:	none!important;
+	text-transform:		uppercase!important;
+}
+
+// remplace la classe .fontsize22
+/* .title-block-custom-mobile {
+	font-size: 			$unit*2.2!important;
+    line-height:		$unit*26!important;
+    text-align:			center!important;
+} */
 
 // Global design
 
@@ -29,12 +46,23 @@
 	width:$unit*1.5;
 }
 
-
 .btn-style {
-	color: $black;
+	color:		$black;
 	background: $button-background;
-	border: $button-border;
-	padding: $button-padding;
+	border:		$button-border;
+	padding:	$button-padding;
+}
+
+.line-separator-background-primary {
+	background:		$line-separator-background-primary;
+	height:			$unit*.2;
+	line-height:	$global-line-height;
+}
+
+.line-separator-background-secondary {
+	background:		$line-separator-background-secondary;
+	height:			$unit*.2;
+	line-height:	$global-line-height;
 }
 
 

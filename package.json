@@ -9,8 +9,16 @@
   "author": "Laurent Blondel",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "^3.9.1",
+    "gulp": "latest",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-cssbeautify": "^1.0.0",
+    "gulp-csscomb": "^3.0.8",
+    "gulp-csso": "^3.0.1",
     "gulp-html-extend": "^1.1.6",
+    "gulp-inline-css": "^3.3.0",
+    "gulp-less": "latest",
+    "gulp-load-plugins": "latest",
+    "gulp-rename": "latest",
     "gulp-sass": "^4.0.1"
   }
 }
