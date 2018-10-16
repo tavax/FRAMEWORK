@@ -31,7 +31,7 @@
                                                             <td align="center" valign="top" style="padding: 20px 0 0 0;">
                                                                <table role="presentation" border="0" align="center" cellpadding="0" cellspacing="0">
                                                                   <tr>
-                                                                     <td valign="top" align="center" style="font-size: 26px; font-family: 'Nespresso Lucas XtraBd', Helvetica, Arial, sans-serif; line-height: 30px; color: #231f20; text-decoration: none; padding: 0 0 10px 0; text-transform: uppercase; font-weight: bold;" class="fontsize22">YOUR MEMBERSHIP LEVEL</td>
+                                                                     <td valign="top" align="center" style="font-size: 26px; font-family: 'Nespresso Lucas XtraBd', Helvetica, Arial, sans-serif; line-height: 30px; color: #231f20; text-decoration: none; padding: 0 0 10px 0; text-transform: uppercase; font-weight: bold;" class="fontsize22"><!-- @@var title_membership --></td>
                                                                   </tr>
                                                                </table>
                                                                <table width="60" border="0" cellspacing="0" cellpadding="0">
@@ -57,7 +57,7 @@
                                                                               <td valign="top" align="center" style="padding: 0px 0 5px 0;"><a href="http://www.nespresso.com/<%= Url_MembershipStatus %>" target="_blank"><img src="http://www.nespresso.com/emailing/NespressoVisuals/international/CLUB/status-connoisseur-white.png" width="130" height="10" border="0" alt="" style="display:block;"></a></td>
                                                                            </tr>
                                                                            <tr>
-                                                                              <td valign="top" style="font-size: 17px; font-family: 'Nespresso Lucas', Helvetica, Arial, sans-serif; line-height: 22px; color: #ffffff; text-decoration: none; text-align: center; font-weight: normal!important; padding: 0 0 5px 0;" class="fontsize16">0-4 YEARS</td>
+                                                                              <td valign="top" style="font-size: 17px; font-family: 'Nespresso Lucas', Helvetica, Arial, sans-serif; line-height: 22px; color: #ffffff; text-decoration: none; text-align: center; font-weight: normal!important; padding: 0 0 5px 0;" class="fontsize16"><!-- @@var year_connoisseur --></td>
                                                                            </tr>
                                                                            <tr>
                                                                               <td valign="top" style="font-size: 10px; font-family: 'Nespresso Lucas', Helvetica, Arial, sans-serif; line-height: 14px; color: #d5cab9; text-decoration: none; text-align: center; font-weight: normal!important;" class="nomob">&nbsp;</td>
@@ -96,10 +96,14 @@
                                                                               <td valign="top" align="center" style="padding: 0px 0 5px 0;"><a href="http://www.nespresso.com/<%= Url_MembershipStatus %>" target="_blank"><img src="http://www.nespresso.com/emailing/NespressoVisuals/international/CLUB/status-expert-grey.png" width="130" height="10" border="0" alt="" style="display:block;"></a></td>
                                                                            </tr>
                                                                            <tr>
-                                                                              <td valign="top" style="font-size: 17px; font-family: 'Nespresso Lucas', Helvetica, Arial, sans-serif; line-height: 22px; color: #d5cab9; text-decoration: none; text-align: center; font-weight: normal!important; padding: 0 0 5px 0;">5-9 YEARS</td>
+                                                                              <td valign="top" style="font-size: 17px; font-family: 'Nespresso Lucas', Helvetica, Arial, sans-serif; line-height: 22px; color: #d5cab9; text-decoration: none; text-align: center; font-weight: normal!important; padding: 0 0 5px 0;">
+                                                                                 <!-- @@var year_expert -->
+                                                                              </td>
                                                                            </tr>
                                                                            <tr>
-                                                                              <td valign="top" style="font-size: 10px; font-family: 'Nespresso Lucas', Helvetica, Arial, sans-serif; line-height: 14px; color: #d5cab9; text-decoration: none; text-align: center; font-weight: normal!important;"><strong>OR 1000 CAPSULES A YEAR</strong></td>
+                                                                              <td valign="top" style="font-size: 10px; font-family: 'Nespresso Lucas', Helvetica, Arial, sans-serif; line-height: 14px; color: #d5cab9; text-decoration: none; text-align: center; font-weight: normal!important;">
+                                                                                 <strong><!-- @@var cond_Expert --></strong>
+                                                                              </td>
                                                                            </tr>
                                                                            <tr>
                                                                               <td height="10" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
@@ -135,10 +139,14 @@
                                                                               <td valign="top" align="center" style="padding: 0px 0 5px 0;"><a href="http://www.nespresso.com/<%= Url_MembershipStatus %>" target="_blank"><img src="http://www.nespresso.com/emailing/NespressoVisuals/international/CLUB/status-ambassador-grey.png" width="130" height="10" border="0" alt="" style="display:block;"></a></td>
                                                                            </tr>
                                                                            <tr>
-                                                                              <td valign="top" style="font-size: 17px; font-family: 'Nespresso Lucas', Helvetica, Arial, sans-serif; line-height: 22px; color: #d5cab9; text-decoration: none; text-align: center; font-weight: normal!important; padding: 0 0 5px 0;">10+ YEARS</td>
+                                                                              <td valign="top" style="font-size: 17px; font-family: 'Nespresso Lucas', Helvetica, Arial, sans-serif; line-height: 22px; color: #d5cab9; text-decoration: none; text-align: center; font-weight: normal!important; padding: 0 0 5px 0;">
+                                                                                 <!-- @@var year_ambassador -->
+                                                                              </td>
                                                                            </tr>
                                                                            <tr>
-                                                                              <td valign="top" style="font-size: 10px; font-family: 'Nespresso Lucas', Helvetica, Arial, sans-serif; line-height: 14px; color: #d5cab9; text-decoration: none; text-align: center; font-weight: normal!important;"><strong>OR 1500 CAPSULES A YEAR</strong></td>
+                                                                              <td valign="top" style="font-size: 10px; font-family: 'Nespresso Lucas', Helvetica, Arial, sans-serif; line-height: 14px; color: #d5cab9; text-decoration: none; text-align: center; font-weight: normal!important;">
+                                                                                 <strong><!-- @@var cond_ambassador --></strong>
+                                                                              </td>
                                                                            </tr>
                                                                            <tr>
                                                                               <td height="10" style="font-size: 1px; line-height: 1px;">&nbsp;</td>

@@ -47,18 +47,12 @@ gulp.task('html', function() {
   return  gulp.src(source + '/{,blocks/footer/2018/}/{,blocks/content/2018/}/{,blocks/header/}*.html')
     // Generates HTML includes
     .pipe(extender({
-      annotations: false,
-      verbose: false
+      annotations: true,
+      verbose: true
     })) // default options
     .pipe(gulp.dest(destination))
 });
 
-gulp.task('inliner', function() {
-    return gulp.src(source + '/*.html')
-        .pipe(inlineCss())
-        .pipe(gulp.dest(destination));
-});
-
 gulp.task('watch', function () {
-    gulp.watch([destination + '/index.html'], ['html'], ['inliner'])
+    gulp.watch([destination + '/index.html'])
 })
