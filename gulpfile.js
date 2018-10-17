@@ -33,14 +33,14 @@ gulp.task('sass', function(){
     .pipe(gulp.dest(destination + '/css'))
 });
 
-gulp.task('minify', function () {
-  return gulp.src(destination + '/assets/css/*.css')
+/*gulp.task('minify', function () {
+  return gulp.src(destination + '/css/*.css')
     .pipe(plugins.csso())
     .pipe(plugins.rename({
       suffix: '.min'
     }))
-    .pipe(gulp.dest(destination + '/assets/css/'));
-});
+    .pipe(gulp.dest(destination + '/css/'));
+});*/
 
 // Tâche "html" = includes HTML
 gulp.task('html', function() {
@@ -53,6 +53,7 @@ gulp.task('html', function() {
     .pipe(gulp.dest(destination))
 });
 
-gulp.task('watch', function () {
-    gulp.watch([destination + '/index.html'])
+/*gulp.task('watch', function () {
+    gulp.watch([destination + '/*.html'], ['html'])
 })
+*/
