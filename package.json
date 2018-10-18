@@ -9,6 +9,7 @@
   "author": "Laurent Blondel",
   "license": "ISC",
   "devDependencies": {
+    "del": "^3.0.0",
     "gulp": "latest",
     "gulp-autoprefixer": "^6.0.0",
     "gulp-cssbeautify": "^1.0.0",

@@ -7,7 +7,8 @@ var sass = require('gulp-sass');
 var csscomb = require('gulp-csscomb');
 const autoprefixer = require('gulp-autoprefixer');
 var csso = require('gulp-csso');
-var extender = require('gulp-html-extend')
+var extender = require('gulp-html-extend');
+var del = require('del');
 
 // Include plugins
 var plugins = require('gulp-load-plugins')(); // tous les plugins de package.json
@@ -57,3 +58,7 @@ gulp.task('html', function() {
     gulp.watch([destination + '/*.html'], ['html'])
 })
 */
+
+gulp.task('clean', function() {
+  del(destination);
+})
