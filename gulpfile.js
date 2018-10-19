@@ -11,13 +11,14 @@ var extender = require('gulp-html-extend');
 var del = require('del');
 
 // Include plugins
-var plugins = require('gulp-load-plugins')(); // tous les plugins de package.json
+var plugins = require('gulp-load-plugins')();
 
 // Variables de chemins
 var source = './app'; // dossier de travail
 var destination = './dist'; // dossier à livrer
 
 
+// les tâches
 gulp.task('sass', function(){
   return gulp.src(source + '/scss/**/*.scss')
   	.pipe(plugins.sass())
@@ -43,14 +44,14 @@ gulp.task('sass', function(){
     .pipe(gulp.dest(destination + '/css/'));
 });*/
 
-// Tâche "html" = includes HTML
+// fusion des includes en un seul fichier
 gulp.task('html', function() {
-  return  gulp.src(source + '/{,blocks/footer/2018/}/{,blocks/content/2018/}/{,blocks/header/}*.html')
+  return  gulp.src(source + '/{,blocks/}*.html')
     // Generates HTML includes
     .pipe(extender({
       annotations: true,
       verbose: true
-    })) // default options
+    }))
     .pipe(gulp.dest(destination))
 });
 
@@ -59,6 +60,7 @@ gulp.task('html', function() {
 })
 */
 
+// suppression du dossier distribution (dist)
 gulp.task('clean', function() {
   del(destination);
 })
