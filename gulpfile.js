@@ -60,6 +60,12 @@ gulp.task('html', function() {
 })
 */
 
+gulp.task('inliner', function() {
+    return gulp.src(source + '/*.html')
+        .pipe(inlineCss())
+        .pipe(gulp.dest(destination));
+});
+
 // suppression du dossier distribution (dist)
 gulp.task('clean', function() {
   del(destination);

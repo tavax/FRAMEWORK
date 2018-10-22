@@ -10,9 +10,212 @@
       <!--Adaptation in SASS/framework by the Cabestan team - lead @LaurentBlondel -->
       <title>Nespresso</title>
       <!--build:css css/styles.min.css-->
-      <link rel="stylesheet" href="css/styles.css">
+      
       <!--endbuild-->
+      <style type="text/css">
+         .coucou {
+            color: red!important;
+         }
+         * {
+            mso-line-height-rule: exactly;
+         }
 
+         * {
+            -webkit-text-size-adjust: none;
+            -ms-text-size-adjust: none;
+         }
+
+         table td {
+            border-collapse: collapse;
+         }
+
+         html,
+         body,
+         p,
+         div {
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+         }
+
+         .ExternalClass {
+            width: 100%;
+         }
+
+         .ExternalClass * {
+            line-height: 110%
+         }
+
+         img {
+            -ms-interpolation-mode: bicubic;
+            display: block;
+            border: 0;
+         }
+
+         body {
+            margin: 0!important;
+            padding: 0!important;
+            width: 100%!important;
+         }
+
+         .hvr-fade {
+            display: inline-block;
+            text-align: center;
+            vertical-align: middle;
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            -moz-osx-font-smoothing: grayscale;
+            overflow: hidden;
+            -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+            -webkit-transition-property: color, background-color;
+            transition-property: color, background-color;
+         }
+
+         .hvr-fade:hover,
+         .hvr-fade:focus,
+         .hvr-fade:active {
+            background-color: #d9caaf;
+            color: white;
+         }
+         .clearheight {
+            height: auto;
+         }
+
+      </style>
+      <style type="text/css">
+         div[style*="margin: 16px 0"] {
+            margin: 0!important;
+         }
+
+         a[x-apple-data-detectors] {
+            color: inherit!important;
+            text-decoration: none!important;
+            font-size: inherit!important;
+            font-family: inherit!important;
+            font-weight: inherit!important;
+            line-height: inherit!important;
+         }
+
+      </style>
+      <style type="text/css">
+         @media screen and (max-device-width:640px),
+         screen and (max-width:640px) {
+            table tbody tr {
+               width: 100%!important;
+               display: table!important;
+            }
+            .w100pc {
+               width: 100%!important;
+               max-width: 1000px!important;
+               height: auto!important;
+            }
+            .w49pc {
+               width: 49%!important;
+               max-width: 1000px!important;
+               height: auto!important;
+            }
+            .w200px {
+               width: 200px!important;
+               max-width: 1000px!important;
+               height: auto!important;
+            }
+            .nomob {
+               display: none!important;
+               width: 0px!important;
+               height: 0px!important;
+            }
+            .showmob {
+               display: block!important;
+               width: 100%!important;
+               height: auto!important;
+            }
+            .colsplit {
+               width: 100%!important;
+               float: left!important;
+               display: block!important;
+            }
+            .colsplit-top {
+               width: 100%!important;
+               display: table-row-group!important;
+            }
+            .colsplit-bottom {
+               width: 100%!important;
+               display: table-footer-group!important;
+            }
+            .colsplitborder {
+               width: 100%!important;
+               float: left!important;
+               display: block!important;
+               border-bottom: 1px solid #eae9e5;
+            }
+            .center {
+               text-align: center!important;
+            }
+            .left {
+               text-align: left!important;
+               height: 80px!important;
+            }
+            .fontsize52 {
+               font-size: 52px!important;
+               line-height: 56px!important;
+               text-align: center!important;
+            }
+            .fontsize22 {
+               font-size: 22px!important;
+               line-height: 26px!important;
+               text-align: center!important;
+            }
+            .fontsize16 {
+               font-size: 16px!important;
+               line-height: 20px!important;
+               text-align: center!important;
+            }
+            .padl20 {
+               padding-left: 20px!important;
+            }
+            .padb20 {
+               padding-bottom: 20px!important;
+            }
+            .clearheight {
+               height: auto;
+            }
+            .padb20 {
+               padding-bottom: 20px!important;
+            }
+         }
+
+      </style>
+      <style type="text/css">
+         @font-face {
+            font-family: 'Nespresso Lucas', Helvetica, Arial, sans-serif;
+            src:  local("http://www.nespresso.com/emailing/NespressoVisuals/common/fonts/Regular/NespressoLucas-Regular.woff2") format("woff2"), 
+                  local("http://www.nespresso.com/emailing/NespressoVisuals/common/fonts/Regular/NespressoLucas-Regular.woff") format("woff"), 
+                  local("http://www.nespresso.com/emailing/NespressoVisuals/common/fonts/Regular/NespressoLucas-Regular.ttf") format("opentype");
+            font-weight: normal;
+            font-style: normal;
+         }
+         @font-face {
+            font-family: 'Nespresso Lucas Light', Helvetica, Arial, sans-serif;
+            src:  local("http://www.nespresso.com/emailing/NespressoVisuals/common/fonts/Light/NespressoLucas-Light.woff2") format("woff2"), 
+                  local("http://www.nespresso.com/emailing/NespressoVisuals/common/fonts/Light/NespressoLucas-Light.woff") format("woff"), 
+                  local("http://www.nespresso.com/emailing/NespressoVisuals/common/fonts/Light/NespressoLucas-Light.ttf") format("opentype"); 
+            font-weight: normal;
+            font-style: normal;
+         }
+         @font-face {
+            font-family: 'Nespresso Lucas XtraBd', Helvetica, Arial, sans-serif;
+            src:  local("http://www.nespresso.com/emailing/NespressoVisuals/common/fonts/XtraBd/NespressoLucas-XtraBd.woff2") format("woff2"), 
+                  local("http://www.nespresso.com/emailing/NespressoVisuals/common/fonts/XtraBd/NespressoLucas-XtraBd.woff") format("woff"),
+                  local("http://www.nespresso.com/emailing/NespressoVisuals/common/fonts/XtraBd/NespressoLucas-XtraBd.ttf") format("opentype");
+            font-weight: normal;
+            font-style: normal;
+         }
+
+      </style>
       <!--[if gte mso 9]>
         <style type="text/css" media="all">
            .outlook-button {
@@ -28,7 +231,7 @@
       <![endif]-->
       
    </head>
-   <body class="noPadding noMargin wFull">
+   <body style="margin:0!important; padding:0!important; width: 100%!important;" class="body">
       
       <!-- @@include blocks/header/2018/preHeader.html {"preHeader": "Lorem ipsum dolor sit amet lorem ipsum", "viewOnline": "<u>View&nbsp;online</u>"} -->
 
@@ -37,11 +240,12 @@
       <!-- @@include blocks/menu/2018/menuHeader.html {"item_1": "COFFEE","url_1": "http://www.nespresso.com/","item_2": "MACHINES","url_2": "http://www.nespresso.com/","item_3": "ACCESSORIES","url_3": "http://www.nespresso.com/","item_4": "SERVICES","url_4": "http://www.nespresso.com/","item_5": "THE POSITIVE CUP","url_5": "http://www.nespresso.com/","item_6": "ORDER","url_6": "http://www.nespresso.com/"} -->
       
       <!-- wrapper -->
-      <table role="presentation" border="0" cellspacing="0" cellpadding="0" class="wFull">
+      <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="100%">
          <tr>
             <td align="center" valign="top">
 
-               <!-- @@include blocks/content/2018/block_01.html {"title":"LOREM IPSUM DOLOR", "content":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", "CTA":"LOREM IPSUM DOLOR", "url_CTA":"http://www.nespresso.com" } -->
+               <!-- @@include blocks/content/2018/block_01.html {"title":"LOREM IPSUM DOLOR", "content":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", "CTA":"LOREM IPSUM DOLOR", "url_CTA":"http://www.nespresso.com", "bg_image":"https://www.zantetsuken.fr/image_texte_magique.php" } -->
+               <!-- attention ! block 1 -> ajout manuellement de l'url de l'image pour la cond outlook  -->
                
                <!-- @@include blocks/content/2018/separator_block.html -->
 
@@ -89,7 +293,7 @@
 
                <!-- @@include blocks/content/2018/separator_block.html -->
             
-               <!-- @@include blocks/content/2018/block_13.html {"img":"http://placehold.it/310x200","title":"LOREM IPSUM DOLOR","content":"Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do.","CTA":"LOREM IPSUM DOLOR"} --> 
+               <!-- @@include blocks/content/2018/block_13.html {"img":"http://placehold.it/640x360", "title":"LOREM IPSUM DOLOR", "content":"Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do.", "CTA":"LOREM IPSUM DOLOR", "url":"http://www.nespresso.com" } --> 
                <!-- attention ! block 13 -> ajout manuellement de l'url de l'image pour la cond outlook  -->
 
                <!-- @@include blocks/content/2018/separator_block.html -->
@@ -194,10 +398,10 @@
 
       <!-- @@include blocks/service_block/2018/services_blocks.html {"title":"WHAT ELSE CAN WE DO FOR YOU?","text_bloc_1":"LOREM IPSUM DOLOR SIT AMET","img1":"http://placehold.it/92x61","url1":"http://www.nespresso.com/","text_bloc_2":"LOREM IPSUM DOLOR SIT AMET","img2":"http://placehold.it/92x61","url2":"http://www.nespresso.com/","text_bloc_3":"LOREM IPSUM DOLOR SIT AMET","img3":"http://placehold.it/92x61","url3":"http://www.nespresso.com/","text_bloc_4":"LOREM IPSUM DOLOR SIT AMET","img4":"http://placehold.it/92x61","url4":"http://www.nespresso.com/","text_bloc_5":"LOREM IPSUM DOLOR SIT AMET","img5":"http://placehold.it/92x61","url5":"http://www.nespresso.com/"} -->
                                           
-      <table role="presentation" border="0" cellspacing="0" cellpadding="0" class="wFull">
+      <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="100%">
          <tr>
             <td align="center" valign="top" bgcolor="#231f20" style="padding: 6px 0 6px 0;">
-               <table role="presentation" width="670" border="0" align="center" cellpadding="0" cellspacing="0" class="w100pc">
+               <table role="presentation" width="670" border="0" align="center" cellpadding="0" cellspacing="0" class="w100pc coucou">
                   <tr>
                      <td class="gutter"></td>
                      <td valign="top" align="center" style="padding: 25px 0 25px 0;">
@@ -228,7 +432,7 @@
          </tr>
       </table>
       <!-- old android fix -->
-      <div class="fixAndroid">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div>
+      <div style="display:none; white-space:nowrap; font:15px courier; color:#ffffff; line-height:0; width:800px !important; min-width:600px !important; max-width:800px !important;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div>
       <!-- /footer 03 -->
 
       <!-- @@include analytics/pixelCode.html -->
