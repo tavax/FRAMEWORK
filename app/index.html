@@ -7,7 +7,6 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <!--<![endif]-->
       <meta name="format-detection" content="telephone=no">
-      <!--Adaptation in SASS/framework by the Cabestan team - lead @LaurentBlondel -->
       <title>Nespresso</title>
       <!--build:css css/styles.min.css-->
       
@@ -192,9 +191,9 @@
       <style type="text/css">
          @font-face {
             font-family: 'Nespresso Lucas', Helvetica, Arial, sans-serif;
-            src:  local("http://www.nespresso.com/emailing/NespressoVisuals/common/fonts/Regular/NespressoLucas-Regular.woff2") format("woff2"), 
-                  local("http://www.nespresso.com/emailing/NespressoVisuals/common/fonts/Regular/NespressoLucas-Regular.woff") format("woff"), 
-                  local("http://www.nespresso.com/emailing/NespressoVisuals/common/fonts/Regular/NespressoLucas-Regular.ttf") format("opentype");
+            src:  url("http://www.nespresso.com/emailing/NespressoVisuals/common/fonts/Regular/NespressoLucas-Regular.woff2") format("woff2"), 
+                  url("http://www.nespresso.com/emailing/NespressoVisuals/common/fonts/Regular/NespressoLucas-Regular.woff") format("woff"), 
+                  url("http://www.nespresso.com/emailing/NespressoVisuals/common/fonts/Regular/NespressoLucas-Regular.ttf") format("opentype");
             font-weight: normal;
             font-style: normal;
          }
@@ -257,7 +256,7 @@
 
                <!-- @@include blocks/content/2018/separator_block.html -->
 
-               <!-- @@include blocks/content/2018/block_04.html {"title":"<u style='color:red'>test</u>"} -->
+               <!-- @@include blocks/content/2018/block_04.html {"title":"test"} -->
 
                <!-- @@include blocks/content/2018/separator_block.html -->
             
