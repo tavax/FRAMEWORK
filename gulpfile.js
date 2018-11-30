@@ -9,6 +9,8 @@ const autoprefixer = require('gulp-autoprefixer');
 var csso = require('gulp-csso');
 var extender = require('gulp-html-extend');
 var del = require('del');
+var gulpRemoveHtml = require('gulp-remove-html');
+var runSequence = require('run-sequence');
 
 // Include plugins
 var plugins = require('gulp-load-plugins')();
@@ -32,7 +34,7 @@ gulp.task('sass', function(){
             	removeStyleTags: true,
             	removeLinkTags: true
         }))
-    .pipe(gulp.dest(destination + '/css'))
+    .pipe(gulp.dest(source + '/css'))
 });
 
 /*gulp.task('minify', function () {
@@ -55,6 +57,19 @@ gulp.task('html', function() {
     .pipe(gulp.dest(destination))
 });
 
+gulp.task('remove-html', function () {
+  return gulp.src(source + '/index.html')
+    .pipe(gulpRemoveHtml())
+    .pipe(gulp.dest(destination + '/index.txt'));
+});
+
+
+gulp.task('final', function (callback) {
+  runSequence('inliner', 'html',
+  callback
+  )
+})
+
 /*gulp.task('watch', function () {
     gulp.watch([destination + '/*.html'], ['html'])
 })
@@ -63,7 +78,7 @@ gulp.task('html', function() {
 gulp.task('inliner', function() {
     return gulp.src(source + '/*.html')
         .pipe(inlineCss())
-        .pipe(gulp.dest(destination));
+        .pipe(gulp.dest(source));
 });
 
 // suppression du dossier distribution (dist)
