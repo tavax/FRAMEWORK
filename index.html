@@ -1,51 +1,305 @@
-<!doctype html>
-<html lang="fr">
-	<head>
-		<meta charset="utf-8">
-		<title>framework CABESTAN</title>
-		<meta name="description" content="Wiki du framework">
-		<meta name="author" content="Laurent Blondel">
-		<link rel="stylesheet" href="css/styles.css?v=1.0">
-	</head>
-	<body>
-	  	<div class="wrapper">
-			<div class="one">One</div>
-			<div class="two">
-
-				<pre class="brush: css line-numbers  language-css"><code class=" language-css"><span class="token selector"><span class="token class">.wrapper</span> </span><span class="token punctuation">{</span>
-				<span class="token property">display</span><span class="token punctuation">:</span> grid<span class="token punctuation">;</span>
-				<span class="token property">grid-template-columns</span><span class="token punctuation">:</span> <span class="token function">repeat</span><span class="token punctuation">(</span><span class="token number">3</span>, <span class="token number">1</span>fr<span class="token punctuation">)</span><span class="token punctuation">;</span>
-				<span class="token property">grid-gap</span><span class="token punctuation">:</span> <span class="token number">10</span>px<span class="token punctuation">;</span>
-				<span class="token property">grid-auto-rows</span><span class="token punctuation">:</span> <span class="token function">minmax</span><span class="token punctuation">(</span><span class="token number">100</span>px, auto<span class="token punctuation">)</span><span class="token punctuation">;</span>
-				<span class="token punctuation">}</span>
-				<span class="token selector"><span class="token class">.one</span> </span><span class="token punctuation">{</span>
-				<span class="token property">grid-column</span><span class="token punctuation">:</span> <span class="token number">1</span> / <span class="token number">3</span><span class="token punctuation">;</span>
-				<span class="token property">grid-row</span><span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">;</span>
-				<span class="token punctuation">}</span>
-				<span class="token selector"><span class="token class">.two</span> </span><span class="token punctuation">{</span> 
-				<span class="token property">grid-column</span><span class="token punctuation">:</span> <span class="token number">2</span> / <span class="token number">4</span><span class="token punctuation">;</span>
-				<span class="token property">grid-row</span><span class="token punctuation">:</span> <span class="token number">1</span> / <span class="token number">3</span><span class="token punctuation">;</span>
-				<span class="token punctuation">}</span>
-				<span class="token selector"><span class="token class">.three</span> </span><span class="token punctuation">{</span>
-				<span class="token property">grid-column</span><span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">;</span>
-				<span class="token property">grid-row</span><span class="token punctuation">:</span> <span class="token number">2</span> / <span class="token number">5</span><span class="token punctuation">;</span>
-				<span class="token punctuation">}</span>
-				<span class="token selector"><span class="token class">.four</span> </span><span class="token punctuation">{</span>
-				<span class="token property">grid-column</span><span class="token punctuation">:</span> <span class="token number">3</span><span class="token punctuation">;</span>
-				<span class="token property">grid-row</span><span class="token punctuation">:</span> <span class="token number">3</span><span class="token punctuation">;</span>
-				<span class="token punctuation">}</span>
-				<span class="token selector"><span class="token class">.five</span> </span><span class="token punctuation">{</span>
-				<span class="token property">grid-column</span><span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">;</span>
-				<span class="token property">grid-row</span><span class="token punctuation">:</span> <span class="token number">4</span><span class="token punctuation">;</span>
-				<span class="token punctuation">}</span>
-				<span class="token selector"><span class="token class">.six</span> </span><span class="token punctuation">{</span>
-				<span class="token property">grid-column</span><span class="token punctuation">:</span> <span class="token number">3</span><span class="token punctuation">;</span>
-				<span class="token property">grid-row</span><span class="token punctuation">:</span> <span class="token number">4</span><span class="token punctuation">;</span>
-				<span class="token punctuation">}</span><span class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-				
-
-			</div>
-		</div>
-	</body>
+<!DOCTYPE html>
+<html lang="fr" dir="ltr" class="no-js">
+   <head prefix="og: http://ogp.me/ns#">
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+      <title>Base du framework Cabestan | MDN</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="robots" content="index, follow">
+      <link rel="home" href="/fr/">
+      <link href="css/styles.css" rel="stylesheet" type="text/css" />
+   </head>
+   <body class="document">
+      <!-- Header -->
+      <header id="main-header" class="header-main">
+         
+      </header>
+      <!-- Content will go here -->
+      <main id="content">
+         <!-- heading -->
+         <div id="wiki-document-head" class="document-head">
+            <div class="center">
+               <div class="document-title">
+                  <h1>Les concepts de base de l'utilisation du framework</h1>
+               </div>
+            </div>
+         </div>
+         <div class="center clear">
+            <div class="wiki-main-content" id="document-main">
+               <div class="center">
+                  <!-- start the main content container -->
+                  <div id="wiki-column-container" class="wiki-left-present">
+                     <!-- content row with three strips -->
+                     <div class="column-container column-container-reverse">
+                        <!-- center: main article content -->
+                        <div id="wiki-content" class="column-main wiki-column text-content">
+                            <!-- just the article content -->
+                            <article id="wikiArticle">
+								<h2 id="Qu'est-ce_qu'une_grille">Où récupérer les sources ?</h2>
+								<p>Un dépot GIT Cabestan a été mis en place et tout y est accessible d'un simple download.</p>
+								<h3 id="Pistes_à_taille_fixe_ou_variable">Comment se connecter ?</h3>
+								<p>Il faut se rendre à l'adresse du dépot disponible <a href="" target="_blank">ici</a> et cliquer sur le bouton <img src="img/clone.jpg" alt="clone ou download dépot" > pour y récupérer la ligne suivante :</p>
+								<pre class="brush: html">
+									https://github.com/tavax/FRAMEWORK.git
+								</pre>
+								<h3 id="Placement_des_éléments">Comment utiliser cette URL ?</h3>
+								<p>l'extension <em>.git</em> fonctionne en ligne de commande. Pour que cela soit utilisable, il faut installer sur le poste de travail plusieurs choses.</p>
+							</article>
+						</div>
+                              
+                        <!-- quick links and approvals strip -->
+                        <div id="wiki-left" class="column-strip wiki-column">
+                           <!-- crumbs -->
+                           <nav class="crumbs" role="navigation">
+                              <ol typeof="BreadcrumbList" vocab="https://schema.org/" aria-label="fils d'ariane">
+                                 <li property="itemListElement" typeof="ListItem" class="crumb">
+                                    <a href="/fr/docs/Web" property="item" typeof="WebPage">
+                                    <span property="name">Mise en place de l'environnement de travail</span>
+                                    </a>
+                                    <meta property="position" content="1">
+                                 </li>
+                                 <li property="itemListElement" typeof="ListItem" class="crumb">
+                                    <a href="/fr/docs/Web/CSS" property="item" typeof="WebPage">
+                                    <span property="name">CSS : Feuilles de style en cascade</span>
+                                    </a>
+                                    <meta property="position" content="2">
+                                 </li>
+                                 <li property="itemListElement" typeof="ListItem" class="crumb">
+                                    <a href="/fr/docs/Web/CSS/CSS_Grid_Layout" property="item" typeof="WebPage">
+                                    <span property="name">Grilles CSS (CSS Grid)</span>
+                                    </a>
+                                    <meta property="position" content="3">
+                                 </li>
+                                 <li property="itemListElement" typeof="ListItem" class="crumb">
+                                    <span property="name" aria-current="page">Les concepts de base des grilles CSS</span>
+                                 </li>
+                              </ol>
+                           </nav>
+                           <!-- quick links -->
+                           <div class="quick-links" id="quick-links">
+                              <div class="quick-links-head">Sujets associés</div>
+                              <ol>
+                                 <li><strong><a href="/fr/docs/Web/CSS">CSS</a></strong></li>
+                                 <li><strong><a href="/fr/docs/Web/CSS/Reference">Référence CSS</a></strong></li>
+                                 <li><strong><a href="/fr/docs/Web/CSS/CSS_Grid_Layout">CSS Grid Layout</a></strong></li>
+                                 <li class="toggle">
+                                    <details open>
+                                       <summary>Guides</summary>
+                                       <ol>
+                                          <li><a href="/fr/docs/Web/CSS/CSS_Grid_Layout/Placement_automatique_sur_une_grille_CSS" title="En plus de pouvoir placer des objets de façon précise sur une grille, la spécification pour les grilles CSS définit le comportement obtenu lorsque certains des objets ne sont pas placés sur la grille (voire aucun). Pour voir comment fonctionne le placement automatique, il suffit de créer une grille avec un ensemble d'objets. Sans fournir aucune information de placement, ces objets se placeront chacun sur une cellule de la grille.">Le placement automatique sur une grille CSS</a></li>
+                                          <li><a href="/fr/docs/Web/CSS/CSS_Grid_Layout/Les_concepts_de_base" title="Le module CSS Grid Layout ajoute à CSS une grille à deux dimensions. Les grilles peuvent être utilisées pour agencer des  pages entières ou de petits éléments d'interface. Cet article introduit  CSS Grid Layout, et la terminologie de la spécification  CSS Grid Layout Level 1. Les fonctionnalités évoquées seront expliquées plus en détail dans le reste du guide.">Les concepts de base des grilles CSS</a></li>
+                                          <li><a href="/fr/docs/Web/CSS/CSS_Grid_Layout/Alignement_des_bo%C3%AEtes_avec_les_grilles_CSS" title="Si vous connaissez les boîtes flexibles (flexbox) vous savez déjà comment aligner les éléments flexibles à l'intérieur d'un conteneur flexible. Ces propriétés d'alignement, initialement spécifiée dans la spécification des boîtes flexibles, sont désormais spécifiées dans une nouvelle spécification Box Alignment Level 3. Cette spécification détaille le fonctionnement de l'alignement pour les différentes méthodes de disposition.">L'alignement des boîtes avec les grilles CSS</a></li>
+                                          <li><a href="/fr/docs/Web/CSS/CSS_Grid_Layout/Les_grilles_CSS_et_l_accessibilit%C3%A9" title="Pour celles et ceux qui étaient présents aux premières lueurs du Web, les grilles CSS peuvent rappeler l'âge sombre où les tableaux HTML étaient utilisés pour la mise en forme des pages et où les cellules étaient utilisées pour diviser le contenu. Cette approche avait quelques avantages par rapport au positionnement CSS apparu après : on pouvait tirer parti de l'alignement et des colonnes créées dans un tableau. Il y a toutefois un inconvénient majeur : la mise en forme est fortement couplée à la structure du document, entraînant certains problèmes d'accessibilité. On pouvait par exemple découper le contenu dans le tableau afin d'obtenir la mise en forme souhaitée mais la structure de la page n'avait plus aucun sens lorsqu'elle était lue par un lecteur d'écran.">Les grilles CSS et l'accessibilité</a></li>
+                                          <li><a href="/fr/docs/Web/CSS/CSS_Grid_Layout/Les_grilles_CSS_et_l_am%C3%A9lioration_progressive" title="Au printemps 2017, on voit pour la première fois une spécification majeure être disponible presque simultanément dans différents navigateurs : les grilles CSS (CSS Grid). Les grilles CSS sont disponibles dans les versions récentes de Firefox, Chrome, Opera, Safari et Edge. Malgré cela, si ces navigateurs récents permettront à la plupart d'entre nous de profiter de ces nouvelles fonctionnalités, il existe d'anciens navigateurs ou d'autres navigateurs qui ne prennent pas en charge ces fonctionnalité. Dans ce guide, nous allons parcourir différentes stratégies pour gérer cette prise en charge.">Les grilles CSS et l'amélioration progressive</a></li>
+                                          <li><a href="/fr/docs/Web/CSS/CSS_Grid_Layout/Les_grilles_CSS_les_valeurs_logiques_les_modes_d_%C3%A9criture" title="Dans les articles précédents, nous avons évoqué un aspect important de la disposition en grille : la prise en charge des différents modes d'écriture. Dans ce guide, nous nous intéresserons plus particulièrement à cette fonctionnalité ainsi qu'aux autres méthodes modernes de disposition. Cela sera également l'occasion d'en apprendre plus sur les modes d'écritures et la notion de propriété logique/physique.">Les grilles CSS, les valeurs logiques et les modes d'écriture</a></li>
+                                          <li><a href="/fr/docs/Web/CSS/CSS_Grid_Layout/D%C3%A9finir_des_zones_sur_une_grille" title="Dans le guide précédent, on a étudié les lignes formées par une grille et comment positionner des objets sur ces lignes. Lorsqu'on utilise une grille CSS, on a toujours ces lignes et celles-ci permettent d'avoir une disposition simple. Toutefois, il existe une autre méthode de disposition avec les grilles, qu'on peut utiliser seule ou combinée avec les lignes. Avec cette méthode, on place les éléments sur des zones de la grille. Nous allons voir dans ce guide comment cela fonctionne voire comment on peut faire de l'ASCII-art en CSS avec les grilles !">Définir des zones sur une grille</a></li>
+                                          <li><a href="/fr/docs/Web/CSS/CSS_Grid_Layout/Utiliser_des_lignes_nomm%C3%A9es_sur_une_grille" title="Dans les articles précédents, on a vu comment placer des objets sur les lignes définies par les pistes de la grilles. On a également vu comment placer des objets sur des zones nommées. Dans ce guide, nous allons combiner ces deux concepts et apprendre à placer les objets sur des lignes avec des noms. Le nommage des lignes peut s'avérer très utile mais un aspect encore plus intéressant consiste à combiner les noms et les tailles de pistes. Cela sera plus clair lorsque nous aurons vu les différents exemples.">Utiliser des lignes nommées sur une grille</a></li>
+                                          <li><a href="/fr/docs/Web/CSS/CSS_Grid_Layout/Placer_les_%C3%A9l%C3%A9ments_sur_les_lignes_d_une_grille_CSS" title="Dans l'article sur les concepts de base, nous avons vu comment positionner des éléments en utilisant des numéros de lignes. Nous allons désormais étudier cette fonctionnalité de positionnement plus en détail.">Placer les éléments sur les lignes d'une grille CSS</a></li>
+                                          <li><a href="/fr/docs/Web/CSS/CSS_Grid_Layout/Construire_des_dispositions_courantes_avec_des_grilles_CSS" title="Pour clôturer ces différents guides, nous allons maintenant voir différentes dispositions sur lesquelles nous appliquerons des techniques avec les grilles CSS. Nous prendrons un exemple qui utilise les zones nommées d'une grille, un système de grille flexible avec 12 colonnes et aussi une liste de produits avec un placement automatique. Comme nous le verrons, il existe plusieurs méthodes pour accéder à chaque résultat. À vous de choisir la méthode qui vous paraît la plus pertinente et utile pour les problèmes que vous avez à résoudre et les dispositions que vous devez implémenter.">Construire des dispositions courantes avec des grilles CSS</a></li>
+                                          <li><a href="/fr/docs/Web/CSS/CSS_Grid_Layout/Mod%C3%A8le_de_grille_et_autres_mod%C3%A8les_de_disposition" title="Le mode de disposition en grille a été conçu afin de pouvoir fonctionner avec les autres composantes de CSS pour construire un système complet de disposition. Dans ce guide, nous expliquerons comment intégrer une grille CSS parmi d'autres techniques que vous pourriez déjà utiliser.">Le modèle de grille et les autres modèles de disposition</a></li>
+                                       </ol>
+                                    </details>
+                                 </li>
+                                 <li class="toggle">
+                                    <details open>
+                                       <summary>Propriétés</summary>
+                                       <ol>
+                                          <li><a href="/fr/docs/Web/CSS/flex" title="La propriété flex est une propriété raccourcie qui définit la capacité d'un élément flexible à modifier ses dimensions afin de remplir l'espace disponible de son conteneur. Les éléments flexibles peuvent être étirés ou réduits pour utiliser un espace proportionnel à leur coefficient de grossissement ou de rétrécissement afin de ne pas dépasser d'un conteneur. Les propriétés détaillées correspondantes à cette propriété raccourcie sont flex-shrink, flex-grow et flex-basis."><code>flex</code></a></li>
+                                          <li><a href="/fr/docs/Web/CSS/grid" title="La propriété grid est une propriété raccourcie qui permet de définir toutes les propriétés liées aux grilles CSS, qu'elles soient explicites (grid-template-rows, grid-template-columns et grid-template-areas), implicites (grid-auto-rows, grid-auto-columns et grid-auto-flow)."><code>grid</code></a></li>
+                                          <li><a href="/fr/docs/Web/CSS/grid-area" title="La propriété grid-area est une propriété raccourcie pour grid-row-start, grid-column-start, grid-row-end et grid-column-end qui permet de définir la taille d'un objet de la grille et son emplacement."><code>grid-area</code></a></li>
+                                          <li><span class="sidebar-icon"><span title="This is an experimental API that should not be used in production code."><i class="icon-beaker"> </i></span></span><a href="/fr/docs/Web/CSS/grid-auto-columns" title="La propriété grid-auto-columns définit la taille d'une colonne de grille créée de façon implicite."><code>grid-auto-columns</code></a></li>
+                                          <li><a href="/fr/docs/Web/CSS/grid-auto-flow" title="La propriété grid-auto-flow permet de contrôler la façon dont fonctionne l'algorithme de placement automatique. Celui-ci définit exactement comme les objets placés automatiquement s'inscrivent dans la grille."><code>grid-auto-flow</code></a></li>
+                                          <li><a href="/fr/docs/Web/CSS/grid-auto-rows" title="La propriété grid-auto-rows définit la taille d'une ligne de grille créée de façon implicite."><code>grid-auto-rows</code></a></li>
+                                          <li><a href="/fr/docs/Web/CSS/grid-column" title="La propriété grid-column est une propriété raccourcie pour grid-column-start et grid-column-end. Elle permet de définir la taille et l'emplacement d'un élément sur la grille en indiquant l'emplacement du début, de la fin et/ou sa taille."><code>grid-column</code></a></li>
+                                          <li><a href="/fr/docs/Web/CSS/grid-column-end" title="La propriété grid-column-end définit la position de la fin d'un élément de la grille dans une zone donnée ou sur un fragment de colonne donné."><code>grid-column-end</code></a></li>
+                                          <li><a href="/fr/docs/Web/CSS/grid-column-start" title="La propriété grid-column-start définit la position du début d'un élément (au sens des propriétés logiques *-block-start) en définissant la ligne ou la taille de fragment occupé sur la grille."><code>grid-column-start</code></a></li>
+                                          <li><a href="/fr/docs/Web/CSS/grid-row" title="La propriété grid-row est une propriété raccourcie pour grid-row-start et grid-row-end. Elle permet de définir la taille et l'emplacement d'un élément sur la grille en indiquant l'emplacement du début, de la fin et/ou sa taille."><code>grid-row</code></a></li>
+                                          <li><a href="/fr/docs/Web/CSS/grid-row-end" title="La propriété grid-row-end définit la position de la fin d'un élément de la grille dans une zone donnée ou sur un fragment de ligne donné."><code>grid-row-end</code></a></li>
+                                          <li><a href="/fr/docs/Web/CSS/grid-row-start" title="La propriété grid-row-start définit le début de la position, sur une ligne, d'un élément placé sur la grille qui participe à une ligne, à un fragment de ligne ou rien (automatique). Par conséquent, cela définit également le début de la zone de la grille pour cet élément."><code>grid-row-start</code></a></li>
+                                          <li><a href="/fr/docs/Web/CSS/grid-template" title="La propriété grid-template est une propriété raccourcie permettant de définir les colonnes, grilles et zones d'une grille."><code>grid-template</code></a></li>
+                                          <li><a href="/fr/docs/Web/CSS/grid-template-areas" title="La propriété grid-template-areas permet de définir des zones de grille nommées."><code>grid-template-areas</code></a></li>
+                                          <li><a href="/fr/docs/Web/CSS/grid-template-columns" title="La propriété grid-template-columns définit les noms des lignes et les fonctions de taille (track sizing) pour les colonnes de la grille."><code>grid-template-columns</code></a></li>
+                                          <li><a href="/fr/docs/Web/CSS/grid-template-rows" title="La propriété grid-template-rows définit les noms des lignes et les fonctions de taille (track sizing) pour les lignes de la grille."><code>grid-template-rows</code></a></li>
+                                       </ol>
+                                    </details>
+                                 </li>
+                              </ol>
+                           </div>
+                           <!-- approvals -->
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- ends "main-content" -->
+            <div class="newsletter-box">
+               <div class="newsletter">
+                  <form id="newsletterForm" class="newsletter-form nodisable" name="newsletter-form" action="https://www.mozilla.org/en-US/newsletter/" method="post">
+                     <div class="newsletter-head">
+                        <h2 class="newsletter-teaser">Recevez le meilleur du développement web</h2>
+                        <p class="newsletter-description">Recevez le meilleur de MDN, directement dans votre boîte de réception.</p>
+                        <p class="newsletter-lang">Cette lettre d'information est uniquement disponible en anglais pour l'instant.</p>
+                     </div>
+                     <div class="newsletter-fields">
+                        <input type="hidden" id="fmt" name="fmt" value="H">
+                        <input type="hidden" id="newsletterNewslettersInput" name="newsletters" value="app-dev" />
+                        <div id="newsletterErrors" class="newsletter-errors"></div>
+                        <div id="newsletterEmail" class="form-group newsletter-group-email">
+                           <label for="newsletterEmailInput" class="form-label offscreen">Adresse électronique</label>
+                           <input type="email" id="newsletterEmailInput" name="email" class="form-input newsletter-input-email" required placeholder="adresse@example.com" size="30">
+                        </div>
+                        <div id="newsletterPrivacy" class="form-group form-group-agree newsletter-group-privacy hidden">
+                           <input type="checkbox" id="newsletterPrivacyInput" name="privacy" required>
+                           <label for="newsletterPrivacyInput">
+                           J’accepte que Mozilla utilise mes informations conformément à cette <a href="https://www.mozilla.org/privacy/">politique de confidentialité</a>.
+                           </label>
+                        </div>
+                        <div id="newsletterSubmit" class="newsletter-group-submit">
+                           <button id="newsletter-submit" type="submit" class="button neutral newsletter-submit">
+                              S'inscrire maintenant
+                              <svg class="icon icon-arrow" xmlns="http://www.w3.org/2000/svg" width="23" height="28" viewBox="0 0 23 28" aria-hidden="true">
+                                 <path d="M23 15a2.01 2.01 0 0 1-.578 1.422L12.25 26.594c-.375.359-.891.578-1.422.578s-1.031-.219-1.406-.578L8.25 25.422c-.375-.375-.594-.891-.594-1.422s.219-1.047.594-1.422L12.828 18h-11C.703 18 0 17.062 0 16v-2c0-1.062.703-2 1.828-2h11L8.25 7.406a1.96 1.96 0 0 1 0-2.812l1.172-1.172c.375-.375.875-.594 1.406-.594s1.047.219 1.422.594l10.172 10.172c.375.359.578.875.578 1.406z"/>
+                              </svg>
+                           </button>
+                        </div>
+                     </div>
+                  </form>
+                  <div id="newsletterThanks" class="newsletter-thanks hidden">
+                     <h2>Merci&nbsp;! Veuillez vérifier votre boîte de réception afin de confirmer votre inscription.</h2>
+                     <p>Si vous n'avez pas déjà confirmé d'inscription à une lettre d'information Mozilla, vous devrez valider cette inscription. Veuillez vérifier votre boîte de réception, éventuellement vos messages indésirables, pour consulter le message que nous vous avons envoyé.
+                     </p>
+                  </div>
+                  <button id="newsletterHide" type="button" class="only-icon newsletter-hide hidden">
+                     <span>Masquer l'inscription à la lettre d'information</span>
+                     <svg class="icon icon-close" xmlns="http://www.w3.org/2000/svg" width="22" height="28" viewBox="0 0 22 28" aria-hidden="true">
+                        <path d="M20.281 20.656c0 .391-.156.781-.438 1.062l-2.125 2.125c-.281.281-.672.438-1.062.438s-.781-.156-1.062-.438L11 19.249l-4.594 4.594c-.281.281-.672.438-1.062.438s-.781-.156-1.062-.438l-2.125-2.125c-.281-.281-.438-.672-.438-1.062s.156-.781.438-1.062L6.751 15l-4.594-4.594c-.281-.281-.438-.672-.438-1.062s.156-.781.438-1.062l2.125-2.125c.281-.281.672-.438 1.062-.438s.781.156 1.062.438L11 10.751l4.594-4.594c.281-.281.672-.438 1.062-.438s.781.156 1.062.438l2.125 2.125c.281.281.438.672.438 1.062s-.156.781-.438 1.062L15.249 15l4.594 4.594c.281.281.438.672.438 1.062z"/>
+                     </svg>
+                  </button>
+               </div>
+            </div>
+            <menu type="context" id="edit-history-menu">
+               <menuitem data-action="/fr/docs/Web/CSS/CSS_Grid_Layout/Les_concepts_de_base$edit" label="Modifier la page"></menuitem>
+               <menuitem data-action="/fr/docs/Web/CSS/CSS_Grid_Layout/Les_concepts_de_base$history" label="Voir l'historique de la page"></menuitem>
+            </menu>
+         </div>
+      </main>
+      <!-- Footer -->
+      <footer id="nav-footer" class="nav-footer">
+         <div class="center">
+            <a href="/fr/" class="nav-footer-logo">Documentation du Web - MDN</a>
+            <div class="footer-group footer-group-mdn">
+               <h2 class="footer-title">MDN</h2>
+               <ul class="footer-list">
+                  <li><a href="/fr/docs/Web">Technologies web</a></li>
+                  <li><a href="/fr/docs/Learn">Apprendre le développement web</a></li>
+                  <li><a href="/docs/MDN/About">À propos de MDN</a></li>
+                  <li><a href="/fr/docs/MDN/Feedback">Votre avis</a></li>
+                  <li class="footer-social">
+                     <a href="https://twitter.com/mozdevnet">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-twitter" width="26" height="28" viewBox="0 0 26 28" aria-label="Twitter" role="img" focusable="false">
+                           <title>Twitter</title>
+                           <path d="M25.312 6.375a10.85 10.85 0 0 1-2.531 2.609c.016.219.016.438.016.656 0 6.672-5.078 14.359-14.359 14.359-2.859 0-5.516-.828-7.75-2.266.406.047.797.063 1.219.063 2.359 0 4.531-.797 6.266-2.156a5.056 5.056 0 0 1-4.719-3.5c.313.047.625.078.953.078.453 0 .906-.063 1.328-.172a5.048 5.048 0 0 1-4.047-4.953v-.063a5.093 5.093 0 0 0 2.281.641 5.044 5.044 0 0 1-2.25-4.203c0-.938.25-1.797.688-2.547a14.344 14.344 0 0 0 10.406 5.281 5.708 5.708 0 0 1-.125-1.156 5.045 5.045 0 0 1 5.047-5.047 5.03 5.03 0 0 1 3.687 1.594 9.943 9.943 0 0 0 3.203-1.219 5.032 5.032 0 0 1-2.219 2.781c1.016-.109 2-.391 2.906-.781z"></path>
+                        </svg>
+                     </a>
+                  </li>
+                  <li class="footer-social">
+                     <a href="https://github.com/mdn/">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-github" width="24" height="28" viewBox="0 0 24 28" aria-label="GitHub" role="img" focusable="false">
+                           <title>GitHub</title>
+                           <path d="M12 2c6.625 0 12 5.375 12 12 0 5.297-3.437 9.797-8.203 11.391-.609.109-.828-.266-.828-.578 0-.391.016-1.687.016-3.297 0-1.125-.375-1.844-.812-2.219 2.672-.297 5.484-1.313 5.484-5.922 0-1.313-.469-2.375-1.234-3.219.125-.313.531-1.531-.125-3.187-1-.313-3.297 1.234-3.297 1.234a11.28 11.28 0 0 0-6 0S6.704 6.656 5.704 6.969c-.656 1.656-.25 2.875-.125 3.187-.766.844-1.234 1.906-1.234 3.219 0 4.594 2.797 5.625 5.469 5.922-.344.313-.656.844-.766 1.609-.688.313-2.438.844-3.484-1-.656-1.141-1.844-1.234-1.844-1.234-1.172-.016-.078.734-.078.734.781.359 1.328 1.75 1.328 1.75.703 2.141 4.047 1.422 4.047 1.422 0 1 .016 1.937.016 2.234 0 .313-.219.688-.828.578C3.439 23.796.002 19.296.002 13.999c0-6.625 5.375-12 12-12zM4.547 19.234c.031-.063-.016-.141-.109-.187-.094-.031-.172-.016-.203.031-.031.063.016.141.109.187.078.047.172.031.203-.031zm.484.532c.063-.047.047-.156-.031-.25-.078-.078-.187-.109-.25-.047-.063.047-.047.156.031.25.078.078.187.109.25.047zm.469.703c.078-.063.078-.187 0-.297-.063-.109-.187-.156-.266-.094-.078.047-.078.172 0 .281s.203.156.266.109zm.656.656c.063-.063.031-.203-.063-.297-.109-.109-.25-.125-.313-.047-.078.063-.047.203.063.297.109.109.25.125.313.047zm.891.391c.031-.094-.063-.203-.203-.25-.125-.031-.266.016-.297.109s.063.203.203.234c.125.047.266 0 .297-.094zm.984.078c0-.109-.125-.187-.266-.172-.141 0-.25.078-.25.172 0 .109.109.187.266.172.141 0 .25-.078.25-.172zm.906-.156c-.016-.094-.141-.156-.281-.141-.141.031-.234.125-.219.234.016.094.141.156.281.125s.234-.125.219-.219z"></path>
+                        </svg>
+                     </a>
+                  </li>
+               </ul>
+            </div>
+            <a href="https://mozilla.org" class="nav-footer-mozilla">Mozilla</a>
+            <div class="footer-group footer-group-mozilla">
+               <h2 class="footer-title">Mozilla</h2>
+               <ul class="footer-list">
+                  <li><a href="https://www.mozilla.org/about/">À propos</a></li>
+                  <li><a href="https://www.mozilla.org/contact/">Nous contacter</a></li>
+                  <li><a href="https://www.mozilla.org/firefox/?utm_source=developer.mozilla.org&utm_campaign=footer&utm_medium=referral">Firefox</a></li>
+                  <li class="footer-social">
+                     <a href="https://twitter.com/mozilla">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-twitter" width="26" height="28" viewBox="0 0 26 28" aria-label="Twitter" role="img" focusable="false">
+                           <title>Twitter</title>
+                           <path d="M25.312 6.375a10.85 10.85 0 0 1-2.531 2.609c.016.219.016.438.016.656 0 6.672-5.078 14.359-14.359 14.359-2.859 0-5.516-.828-7.75-2.266.406.047.797.063 1.219.063 2.359 0 4.531-.797 6.266-2.156a5.056 5.056 0 0 1-4.719-3.5c.313.047.625.078.953.078.453 0 .906-.063 1.328-.172a5.048 5.048 0 0 1-4.047-4.953v-.063a5.093 5.093 0 0 0 2.281.641 5.044 5.044 0 0 1-2.25-4.203c0-.938.25-1.797.688-2.547a14.344 14.344 0 0 0 10.406 5.281 5.708 5.708 0 0 1-.125-1.156 5.045 5.045 0 0 1 5.047-5.047 5.03 5.03 0 0 1 3.687 1.594 9.943 9.943 0 0 0 3.203-1.219 5.032 5.032 0 0 1-2.219 2.781c1.016-.109 2-.391 2.906-.781z"></path>
+                        </svg>
+                     </a>
+                  </li>
+                  <li class="footer-social">
+                     <a href="https://www.facebook.com/mozilla">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-facebook" width="16" height="28" viewBox="0 0 16 28" aria-label="Facebook" role="img" focusable="false">
+                           <title>Facebook</title>
+                           <path d="M14.984.187v4.125h-2.453c-1.922 0-2.281.922-2.281 2.25v2.953h4.578l-.609 4.625H10.25v11.859H5.469V14.14H1.485V9.515h3.984V6.109C5.469 2.156 7.891 0 11.422 0c1.687 0 3.141.125 3.563.187z"></path>
+                        </svg>
+                     </a>
+                  </li>
+                  <li class="footer-social">
+                     <a href="https://www.instagram.com/mozillagram/">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-instagram" width="24" height="28" viewBox="0 0 24 28" aria-label="Instagram" role="img" focusable="false">
+                           <title>Instagram</title>
+                           <path d="M16 14c0-2.203-1.797-4-4-4s-4 1.797-4 4 1.797 4 4 4 4-1.797 4-4zm2.156 0c0 3.406-2.75 6.156-6.156 6.156S5.844 17.406 5.844 14 8.594 7.844 12 7.844s6.156 2.75 6.156 6.156zm1.688-6.406c0 .797-.641 1.437-1.437 1.437S16.97 8.39 16.97 7.594s.641-1.437 1.437-1.437 1.437.641 1.437 1.437zM12 4.156c-1.75 0-5.5-.141-7.078.484-.547.219-.953.484-1.375.906s-.688.828-.906 1.375c-.625 1.578-.484 5.328-.484 7.078s-.141 5.5.484 7.078c.219.547.484.953.906 1.375s.828.688 1.375.906c1.578.625 5.328.484 7.078.484s5.5.141 7.078-.484c.547-.219.953-.484 1.375-.906s.688-.828.906-1.375c.625-1.578.484-5.328.484-7.078s.141-5.5-.484-7.078c-.219-.547-.484-.953-.906-1.375s-.828-.688-1.375-.906C17.5 4.015 13.75 4.156 12 4.156zM24 14c0 1.656.016 3.297-.078 4.953-.094 1.922-.531 3.625-1.937 5.031s-3.109 1.844-5.031 1.937c-1.656.094-3.297.078-4.953.078s-3.297.016-4.953-.078c-1.922-.094-3.625-.531-5.031-1.937S.173 20.875.08 18.953C-.014 17.297.002 15.656.002 14s-.016-3.297.078-4.953c.094-1.922.531-3.625 1.937-5.031s3.109-1.844 5.031-1.937c1.656-.094 3.297-.078 4.953-.078s3.297-.016 4.953.078c1.922.094 3.625.531 5.031 1.937s1.844 3.109 1.937 5.031C24.016 10.703 24 12.344 24 14z"></path>
+                        </svg>
+                     </a>
+                  </li>
+               </ul>
+            </div>
+            <form class="languages go" method="get" action="/fr/docs/Web">
+               <label for="language">Autres langues :</label>
+               <select id="language" class="wiki-l10n" name="next" dir="ltr">
+                  <option title="Français" data-locale="fr" value="/fr/docs/Web/CSS/CSS_Grid_Layout/Les_concepts_de_base" selected>
+                     Français (fr)
+                  </option>
+                  <option title="Anglais américain" data-locale="fr" value="/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout">
+                     English (US) (en-US)
+                  </option>
+                  <option title="Allemand" data-locale="fr" value="/de/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout">
+                     Deutsch (de)
+                  </option>
+                  <option title="Espagnol" data-locale="fr" value="/es/docs/Web/CSS/CSS_Grid_Layout/Conceptos_B%C3%A1sicos_del_Posicionamiento_con_Rejillas">
+                     Español (es)
+                  </option>
+                  <option title="Japonais" data-locale="fr" value="/ja/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout">
+                     日本語 (ja)
+                  </option>
+                  <option title="Coréen" data-locale="fr" value="/ko/docs/Web/CSS/CSS_Grid_Layout/%EA%B7%B8%EB%A6%AC%EB%93%9C_%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83%EC%9D%98_%EA%B8%B0%EB%B3%B8_%EA%B0%9C%EB%85%90">
+                     한국어 (ko)
+                  </option>
+                  <option title="Portugais brésilien" data-locale="fr" value="/pt-BR/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout">
+                     Português (do Brasil) (pt-BR)
+                  </option>
+                  <option title="Portugais" data-locale="fr" value="/pt-PT/docs/Web/CSS/layout_de_grelha_css/conceitos_basicos_de_layour_de_grelha">
+                     Português (Europeu) (pt-PT)
+                  </option>
+                  <option title="Russe" data-locale="fr" value="/ru/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout">
+                     Русский (ru)
+                  </option>
+                  <option title="Ukrainien" data-locale="fr" value="/uk/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout">
+                     Українська (uk)
+                  </option>
+                  <option title="Vietnamien" data-locale="fr" value="/vi/docs/Web/CSS/CSS_Grid_Layout/tong_quan_ve_grid_layout">
+                     Tiếng Việt (vi)
+                  </option>
+                  <option title="Chinois (simplifié)" data-locale="fr" value="/zh-CN/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout">
+                     中文 (简体) (zh-CN)
+                  </option>
+                  <option title="Chinois (traditionnel)" data-locale="fr" value="/zh-TW/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout">
+                     正體中文 (繁體) (zh-TW)
+                  </option>
+               </select>
+               <noscript><button type="submit">OK</button></noscript>
+            </form>
+            <ul class="footer-tos">
+               <li><a href="https://www.mozilla.org/about/legal/terms/mozilla">Conditions d'utilisation</a></li>
+               <li><a href="https://www.mozilla.org/privacy/websites/">Confidentialité</a></li>
+               <li><a href="https://www.mozilla.org/privacy/websites/#cookies">Cookies</a></li>
+            </ul>
+            <div id="license" class="contentinfo">
+               <p>&copy; 2005-2018 Mozilla et contributeurs individuels.</p>
+               <p>Tous les contenus sont disponibles sous <a href="/en-US/docs/MDN/About#Copyrights_and_licenses">ces licences</a>.</p>
+            </div>
+         </div>
+      </footer>
+   </body>
 </html>
-
