@@ -1,23 +1,22 @@
-
 // Requis
-var gulp = require('gulp'),
-	cssbeautify = require('gulp-cssbeautify'),
-	inlineCss = require('gulp-inline-css');
-var sass = require('gulp-sass');
-var csscomb = require('gulp-csscomb');
-const autoprefixer = require('gulp-autoprefixer');
-var csso = require('gulp-csso');
-var extender = require('gulp-html-extend');
-var del = require('del');
-var gulpRemoveHtml = require('gulp-remove-html');
-var runSequence = require('run-sequence');
+var     gulp = require('gulp'),
+        cssbeautify = require('gulp-cssbeautify'),
+        inlineCss = require('gulp-inline-css');
+var     sass = require('gulp-sass');
+var     csscomb = require('gulp-csscomb');
+const   autoprefixer = require('gulp-autoprefixer');
+var     csso = require('gulp-csso');
+var     extender = require('gulp-html-extend');
+var     del = require('del');
+var     gulpRemoveHtml = require('gulp-remove-html');
+var     runSequence = require('run-sequence');
 
 // Include plugins
-var plugins = require('gulp-load-plugins')();
+var     plugins = require('gulp-load-plugins')();
 
 // Variables de chemins
-var source = './app'; // dossier de travail
-var destination = './dist'; // dossier à livrer
+var     source = './app'; // dossier de travail
+var     destination = './dist'; // dossier à livrer
 
 
 // les tâches
@@ -69,11 +68,6 @@ gulp.task('final', function (callback) {
   callback
   )
 })
-
-/*gulp.task('watch', function () {
-    gulp.watch([destination + '/*.html'], ['html'])
-})
-*/
 
 gulp.task('inliner', function() {
     return gulp.src(source + '/*.html')
