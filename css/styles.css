@@ -6,3 +6,102 @@
 
 
 @font-face{font-family:zillaslab;font-display:fallback;src:url("../../fonts/locales/ZillaSlab-Regular.subset.bbc33fb47cf6.woff2") format("woff2"),url("../../fonts/locales/ZillaSlab-Regular.subset.0357f12613a7.woff") format("woff");font-weight:400;font-style:normal}@font-face{font-family:zillaslab;font-display:optional;src:url("../../fonts/locales/ZillaSlab-Bold.subset.e96c15f68c68.woff2") format("woff2"),url("../../fonts/locales/ZillaSlab-Bold.subset.da0ccde4ca4a.woff") format("woff");font-weight:700;font-style:normal}
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 30px 20px 20px 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup .close {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  transition: all 200ms;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+
+
+.popup table.wrapper {
+	border: 1px solid #ababab;
+	background-image: url(https://www.clicparquet.fr/3694/sol-stratifie-effet-parquet-chene-elegant.jpg);
+}
+.popup table.wrapper:hover {
+	transition: all 200ms;
+}
+
+.popup table.wrapper:before {
+	content: "parent avec bg image";
+	color:black;
+	padding-left: 5px;
+	font-size: 12px;
+}
+
+
+.popup table.child1 {
+	border: 1px solid #ababab!important;
+	width: 100%!important;
+}
+
+	.popup table.child1:hover {
+		background: blue;
+		mix-blend-mode: difference;
+		transition: all 200ms;
+	}
+
+	.popup table.child1:before {
+		content: "1er enfant";
+		color:black;
+		padding-left: 5px;
+		font-size: 12px;
+	}
+
+.popup table.child2 {
+	border: 1px solid #ababab!important;
+	width: 60px!important;
+}
+
+	.popup table.child2:hover {
+		background: green;
+		mix-blend-mode: difference;
+		transition: all 200ms;
+	}
+
+	.popup table.child2:before {
+		content: "separator";
+		color:black;
+		padding-left: 5px;
+		font-size: 12px;
+	}
