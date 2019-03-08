@@ -1,0 +1,64 @@
+button,
+optgroup,
+option,
+select,
+textarea,
+input {
+   font-size: $unit*1.4;
+   font-family: $global-font-family;
+   letter-spacing: -.00278rem;
+   color: $medium-gray;
+
+   &[type=email],
+   &[type=number],
+   &[type=password],
+   &[type=search],
+   &[type=text],
+   &[type=url] {
+      background: $white;
+      border: $unit*.2 solid $dark-gray;
+      padding: $unit*.6 $unit*.8;
+      appearance: textfield
+   }
+
+   &::placeholder {
+      color: $dark-gray;
+   }  
+
+
+   &.disabled,
+   &[disabled] {
+      pointer-events: none;
+      cursor: not-allowed;
+      opacity: .5
+   }
+
+   &.button, 
+   &[type=button],
+   &[type=submit] {
+      border: 0;
+      cursor: pointer;
+      display: inline-block;
+      font-weight: 700;
+      letter-spacing: normal;
+      border: $unit*.2 solid $medium-gray;
+      background-color: $white;
+      padding: $unit*.5 $unit*1.1;
+      color: $medium-gray;
+      text-decoration: none
+   }
+
+   &:active,
+   &:focus,
+   &:hover {
+      text-decoration: none
+   }
+
+   &:invalid {
+     box-shadow: 0px 0px $unit red;
+   }
+}
+
+label {
+   cursor: pointer
+}

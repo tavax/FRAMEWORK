@@ -1,0 +1,254 @@
+
+
+<!DOCTYPE html>
+<html lang="fr" dir="ltr" class="no-js">
+   <head prefix="og: http://ogp.me/ns#">
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+      <title>Base du framework Cabestan | MDN</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="robots" content="index, follow">
+      <link rel="home" href="/fr/">
+      <link href="css/styles.css" rel="stylesheet" type="text/css" />
+   </head>
+   <body class="document">
+      <!-- Header -->
+      <header id="main-header" class="header-main">
+      </header>
+      <!-- Content will go here -->
+      <main id="content">
+         <!-- heading -->
+         <div id="wiki-document-head" class="document-head">
+            <div class="center">
+               <div class="document-title">
+                  <h1>Les concepts de base de l'utilisation du framework</h1>
+               </div>
+            </div>
+         </div>
+         <div class="center clear">
+            <div class="wiki-main-content" id="document-main">
+               <div class="center">
+                  <!-- start the main content container -->
+                  <div id="wiki-column-container" class="wiki-left-present">
+                     <!-- content row with three strips -->
+                     <div class="column-container column-container-reverse">
+                        <!-- center: main article content -->
+                        <div id="wiki-content" class="column-main wiki-column text-content" style="position:relative">
+                           <!-- just the article content -->
+                           <article id="wikiArticle">
+                              <h2>Où récupérer les sources ?</h2>
+                              <p>Un dépot GIT Cabestan a été mis en place et tout y est accessible d'un simple download.</p>
+                              <h3 id="how">Comment se connecter ?</h3>
+                              <p>Il faut se rendre à l'adresse du dépot disponible <a href="" target="_blank">ici</a> et cliquer sur le bouton <img src="img/clone.jpg" alt="clone ou download dépot" > pour y récupérer la ligne suivante :</p>
+                              <pre class="brush: html">
+              									https://github.com/tavax/FRAMEWORK.git
+              								</pre>
+                              <h3 id="start">Comment utiliser cette URL ?</h3>
+                              <p>l'extension <em>.git</em> fonctionne en ligne de commande. Pour que cela soit utilisable, il faut installer sur le poste de travail plusieurs choses :</p>
+                              <ul>
+                                 <li>Télécharger et installer <a href="https://nodejs.org/dist/v10.14.2/node-v10.14.2-x64.msi" target="_blank">node.js</a> (nécessite les droits admin de la machine pour son installation).</li>
+                                 <li>Télécharger et installer <a href="https://github.com/git-for-windows/git/releases/download/v2.20.1.windows.1/Git-2.20.1-64-bit.exe" target="_blank">Git</a>.</li>
+                              </ul>
+                              <h3 id="letsgo">Mise en place de l'environnement de travail</h3>
+                              <p>Une fois les sources en place et node.js et git installer, il faut récupérer les dépendances des scripts. un clic droit dans le dossier et sélectionner la ligne "Git Bash Here".</p>
+                              <p>dans la fenêtre qui va s'ouvrir, la ligne de commande suivante va s'en charger.</p>
+                              <pre class="brush: html">
+                                 npm install --no-optional --no-shrinkwrap --no-package-lock
+                              </pre>
+                              <h3 id="procedureBegin">Procédure de travail (nouveau dépot)</h3>
+                              <p>Le dossier est à jour.</p>
+                              <p>La première chose à faire et le plus important : la création de branche. Rien de plus simple, la commande suivant vas vous montrer toutes les branches que vous avez réalisée</p>
+                              <pre class="brush: html">
+                                 git branch
+                              </pre>
+                              <p>On ne travaille <strong>JAMAIS</strong> sur la branche <strong>master</strong> d'un dépot, cette branche est votre backup de secours, elle doit toujours être à jour par rapport au dépot distant.</p>
+                              <h3 id="procedureMAJMaster">Procédure de travail (mettre à jour la branche master)</h3>
+                              <p>La ligne de commande suivante vous permets de faire un état des lieux du code, à la fois en local et distant du dépot</p>
+                              <pre class="brush: html">
+                                 git status
+                              </pre>
+                              <p>La ligne de commande suivante va récupérer le code distant et mettre à jour votre branche (ici master).</p>
+                              <pre class="brush: html">
+                                 git pull origin master
+                              </pre>
+                              <p>Plusieurs états s'offrent à vous :</p>
+                              <ul>
+                                 <li><strong>nothing to commit, working tree clean</strong> : Votre branche est à jour, parfait.</li>
+                                 <li><strong>Changes not staged for commit:</strong> : Vous avez fait des modifications. il faudra les envoyer sur le dépot distant une fois celles-ci terminées.</li>
+                              </ul>
+                              <h3 id="procedureMAJMaster">Procédure de travail (création d'une branche à partir du master)</h3>
+                              <p>Afin de préserver son code, il faut toujours créer des branches à partir du master afin d'être sur que tout soit à jour avant de faire quelque chose. Faire la commande suivante depuis la branche master</p>
+                              <pre class="brush: html">
+                                 git checkout -b < nom-de-la-branche >
+                              </pre>
+                              <p>Cette manip est en réalité un mixe de plusieurs autres, est à l'avantage de faire gagner du temps et d'être immédiatement transférer sur la branche nouvellement créée.</p>
+                              <p>Le nom de branche doit être relatif au travail que vous allez faire, afin de facilité le traitement collaboratif mais aussi pour se retrouver dans votre travail en local. par ex. après un <em>git status</em>.</p>
+                              <p>pour sortir de votre branche, un simple et le tour est joué</p>
+                              <pre class="brush: html">
+                                 git checkout < nom-de-la-branche-locale-desiree >
+                              </pre>
+                              <h3 id="procedureEnvoieCodeDistance">Procédure de travail (envoyer votre code sur le dépot distant)</h3>
+                              <p>Vos modifications sont terminées, il est temps d'envoyer votre code pour que le dépot distant reflète votre travail.</p>
+                              <p>step 1</p>
+                              <pre class="brush: html">
+                                 git add .
+                              </pre>
+                              Cela vas mettre en "cache" toutes les modifications grâce au <strong> . </strong>, sinon, on peut mettre fichier par fichier, dans ce cas, la commande suivante
+                              <pre class="brush: html">
+                                 git add < nom-du-fichier-modifié >
+                              </pre>
+                              <p>step 2</p>
+                              <pre class="brush: html">
+                                 git commit -m "informations utiles en rapport au travail fait"
+                              </pre>
+                              <p>Ex. git commit -m "mise à jour du bloc X qui corrige le bug sur gmail app"</p>
+                              <p>step 3</p>
+                              <pre class="brush: html">
+                                 git push orign < nom-de-votre-branche >
+                              </pre>
+                              <p>Vous validez vos modifications sur le dépot distant, tout en créant une branche sur celui-ci.</p>
+                              <h3 id="procedureBrancheDistance">Procédure de travail (récupérer une branche distante)</h3>
+                              <p>avant toute chose, placez vous sur votre branche master et procédez ainsi</p>
+                              <p>step 1</p>
+                              <pre class="brush: html">
+                                 git checkout -b < nom-branche-local-qui-sera-créer > origin/< nom-branche-distance-désirée >
+                              </pre>
+                              <p>Cela va créer une nouvelle branche locale intitulée <em>nom-branche-local-qui-sera-créer</em> qui est une copie d’une branche distante du dépôt origin. Et vous placez directement sur cette branche.</p>
+                           </article>
+                           <article id="wikiBlock">
+
+	                           	<a class="button" href="#block1" id="btnBlock1">Block 1</a>
+
+	                           	<div id="block1" class="overlayPopUp">
+									<div class="popup">
+										<a class="close" href="#">&times;</a>
+										<table class="wrapper" role="presentation" width="80%" border="0" align="center" cellpadding="0" cellspacing="0">
+											<tr>
+												<td>
+													<table class="child" role="presentation" width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+														<tr>
+															<td>
+																
+															</td>
+														</tr>
+													</table>
+													<table class="child" role="presentation" width="60" border="0" align="center" cellpadding="0" cellspacing="0">
+														<tr>
+															<td>
+																
+															</td>
+														</tr>
+													</table>
+													<table class="child" role="presentation" width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+														<tr>
+															<td>
+																
+															</td>
+														</tr>
+													</table>
+													<table class="child" role="presentation" width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+														<tr>
+															<td>
+																
+															</td>
+														</tr>
+													</table>
+													<table class="child" role="presentation" width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+														<tr>
+															<td>
+																
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+									</div>
+								</div>
+                           </article>
+                        </div>
+                        <!-- quick links and approvals strip -->
+                       <div id="wiki-left" class="column-strip wiki-column">
+                          <div class="quick-links-head">Accès rapides</div>
+                          <nav class="crumbs" role="navigation">
+                             <ol typeof="BreadcrumbList" vocab="https://schema.org/" aria-label="fils d'ariane">
+                                <li property="itemListElement" typeof="ListItem" class="crumb">
+                                   <a href="#how" property="item">
+                                   <span property="name">Comment se connecter ?</span>
+                                   </a>
+                                   <meta property="position" content="1">
+                                </li>
+                                <li property="itemListElement" typeof="ListItem" class="crumb">
+                                   <a href="#start" property="item">
+                                   <span property="name">Comment utiliser cette URL ?</span>
+                                   </a>
+                                   <meta property="position" content="2">
+                                </li>
+                                <li property="itemListElement" typeof="ListItem" class="crumb">
+                                   <a href="#letsgo" property="item">
+                                   <span property="name">Mise en place de l'environnement de travail</span>
+                                   </a>
+                                   <meta property="position" content="3">
+                                </li>
+                                <li property="itemListElement" typeof="ListItem" class="crumb">
+                                   <a href="#procedureBegin" property="item">
+                                   <span property="name">Procédure de travail (nouveau dépot)</span>
+                                   </a>
+                                   <meta property="position" content="4">
+                                </li>
+                                <li property="itemListElement" typeof="ListItem" class="crumb">
+                                   <a href="#procedureMAJMaster" property="item">
+                                   <span property="name">Procédure de travail (mettre à jour la branche master)</span>
+                                   </a>
+                                   <meta property="position" content="4">
+                                </li>
+                                <li property="itemListElement" typeof="ListItem" class="crumb">
+                                   <a href="#procedureMAJMaster" property="item">
+                                   <span property="name">Procédure de travail (création d'une branche à partir du master)</span>
+                                   </a>
+                                   <meta property="position" content="5">
+                                </li>
+                                <li property="itemListElement" typeof="ListItem" class="crumb">
+                                   <a href="#procedureEnvoieCodeDistance" property="item">
+                                   <span property="name">Procédure de travail (envoyer votre code sur le dépot distant)</span>
+                                   </a>
+                                   <meta property="position" content="5">
+                                </li>
+                                <li property="itemListElement" typeof="ListItem" class="crumb">
+                                   <a href="#procedureBrancheDistance" property="item">
+                                   <span property="name">Procédure de travail (récupérer une branche distante)</span>
+                                   </a>
+                                   <meta property="position" content="5">
+                                </li>
+                             </ol>
+                          </nav>
+                          <div class="quick-links-head">Les différents blocs</div>
+                          <nav class="crumbs" role="navigation">
+                             <ol typeof="BreadcrumbList" vocab="https://schema.org/" aria-label="fils d'ariane">
+                                <li property="itemListElement" typeof="ListItem" class="crumb">
+                                   <a href="#btnBlock1" property="item">
+                                   <span property="name">Block 1</span>
+                                   </a>
+                                   <meta property="position" content="1">
+                                </li>
+                             </ol>
+                          </nav>
+                          <!-- quick links -->
+                       </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- ends "main-content" -->
+         </div>
+      </main>
+      <!-- Footer -->
+      <footer id="nav-footer" class="nav-footer">
+         <div class="center">
+            <div id="license" class="contentinfo">
+               <p>&copy; 2018 Cabestan.</p>
+            </div>
+         </div>
+      </footer>
+   </body>
+</html>

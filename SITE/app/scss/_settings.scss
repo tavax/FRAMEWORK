@@ -1,0 +1,67 @@
+//  Cabestan settings framework
+//  ------------------------------
+//
+//  Table of Contents:
+//
+//   1. Global
+//   2. Color
+//   3. Typography
+//   4. Button
+//   5. Menu
+//   6. Container
+
+
+// 1. Global
+// ---------
+
+$unit: 					10px; // base du calcul du framework
+$global-font-weight:	400;
+$primary-color:			#2199e8;
+$secondary-color:		#777777;
+$link-color:			#3d7e9a;
+
+$light-gray:			#eeeeee;
+$medium-gray:			#333333;
+$dark-gray:				#8a8a8a;
+
+$black:					#0a0a0a;
+$white:					#fefefe;
+
+$global-width:			580px;
+$global-width-small:	95%;
+$global-gutter:			20px;
+$global-gutter-top:		20px;
+$global-gutter-right:	20px;
+$global-gutter-bottom:	20px;
+$global-gutter-left:	20px;
+$body-background:		$light-gray;
+$container-background:	$white;
+
+// 2. Color
+// -------
+
+
+// 3. Typography
+// -------------
+
+$global-font-family:		'Open Sans', sans-serif;
+$global-line-height:		1.6em;
+
+
+// 3.1. Custom title 
+$title-font-size:	$unit*3;
+$title-color:		#231f20;
+
+// 4. Forms
+// ---------
+
+$button-padding: $unit $unit*1.5;
+$button-background: $white;
+$button-border: $unit*.1 solid $black;
+
+// 5. Menu
+// -------
+
+$menu-item-padding: 10px;
+$menu-item-gutter: 10px;
+$menu-item-color: $primary-color;

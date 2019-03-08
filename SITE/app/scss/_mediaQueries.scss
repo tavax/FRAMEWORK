@@ -1,0 +1,13 @@
+@media print {
+   .center {
+      padding-left: 0;
+      padding-right: 0
+   }
+}
+
+@media all and (min-width:47.9385em) {
+   .center {
+      padding-left: 24px;
+      padding-right: 24px
+   }
+}

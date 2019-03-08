@@ -1,0 +1,26 @@
+@import "resetmeyer.scss";
+
+@import "settings.scss"; // all customisation elements are here
+
+@import "default.scss"; // all defaults elements are here
+
+@import "font.scss"; // all fonts are here
+@import "forms.scss"; // all forms elements are here
+@import "mediaQueries.scss"; // all media queries are here
+@import "tooltips.scss";
+
+@import "recup1.scss";
+@import "recup2.scss";
+
+
+nav.crumbs {
+	padding: 2px 0 0 12px;
+	position: -webkit-sticky;
+	position: sticky;
+	top: -1px;
+	border-top:1px solid red;
+}
+
+#wiki-left {
+	padding: 24px 0 0 0;
+}
